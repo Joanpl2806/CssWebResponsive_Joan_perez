@@ -1,0 +1,356 @@
+body{
+  font-family: Dancing Script;
+  background-color: #02010a;
+  color: white;
+}
+
+/*Modelo para desktop*/
+@media (min-width: 900px) {
+  /*Encabezado de las 3 páginas*/
+  .cabezera{
+    background-color: #5b7989;
+    width: 80vw;
+    margin: 0 auto;
+    text-shadow: 0 0 2px black;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .cabezera nav{
+    display: flex;
+    align-items: center;
+    padding-right: 2vw;
+    font-size: 22px;
+  }
+
+  .cabezera h1{
+    text-align: left;
+    padding-left: 2vw;
+  }
+  /*Fin del encabezado*/
+
+  /*Contenido index*/
+  .contenidoindex1{
+    background-color: #82c3a6;
+    width: 80vw;
+    height: 52vh;
+    margin: auto;
+    align-items: center;
+    display: flex;
+  }
+
+  .contenidoindex2{
+    background-color: #d5c75f;
+    border: 1px;
+    width: 80vw;
+    height: 52vh;
+    margin: auto;
+    display: flex;
+  }
+
+  .contenidoindex1 figure{
+    display: flex;
+    margin: auto;
+  }
+
+  .contenidoindex1 figure img{
+    width: 80%;
+    height: 44vh;
+    margin: auto;
+    box-shadow: 2px 2px 2px #000000;
+  }
+
+  .contenidoindex2 figure{
+    display: block;
+    width: 50%;
+    padding: 3vh 0vh;
+    margin: auto;
+    flex-direction: row;
+  }
+
+  .contenidoindex2 figure img{
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    margin: auto;
+  }
+  /*Fin del contenido index*/
+
+  /*Contenido paisajes y retratos*/
+  .galeria{
+    background-color: #d5c75f;
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galeria div{
+    width: 33%;
+    height: 40vh;
+    display: flex;
+  }
+
+  .galeria div img{
+    display: flex;
+    margin: auto;
+  }
+  /*Fin del contenido paisajes y retratos*/
+
+  /*Pie de página de las 3 páginas*/
+  .piepagina{
+    background-color: #C6d5c5;
+    color: black;
+    width: 80vw;
+    border-radius: 0 0 10px 10px;
+    margin: auto;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  .piepagina div{
+    width: 20%;
+    padding-left: 3vw;
+  }
+  /*Fin del pie de página*/
+}
+
+/*Modelo para smartphone, tablets, etc*/
+@media (max-width:900px){
+  /*Encabezado de las 3 páginas*/
+  .cabezera{
+    background-color: #5b7989;
+    width: 100%;
+    text-shadow: 0 0 2px black;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .cabezera h1{
+    text-align: center;
+    padding-top: 2vh;
+  }
+
+  .cabezera nav{
+    text-align: center;
+    padding-bottom: 3vh;
+  }
+  /*Fin del encabezado*/
+
+  /*Contenido index*/
+  .contenidoindex1{
+    background-color: #82c3a6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenidoindex2{
+    background-color: #d5c75f;
+    width: 100%;
+    display: block;
+    padding: 2vh 0vh;
+  }
+
+  .contenidoindex1 figure{
+    display: flex;
+    margin: auto;
+    padding: 2vh 0vh;
+    width: 100%;
+  }
+
+  .contenidoindex1 figure img{
+    width: 70%;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    box-shadow: 2px 2px 5px #000000;
+  }
+
+  .contenidoindex2 figure{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 2vh 0vh;
+
+  }
+
+  .contenidoindex2 figure img{
+    width: 70%;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+  }
+  /*Fin del contenido index*/
+
+  /*Contenido paisajes y retratos*/
+  .galeria{
+    background-color: #d5c75f;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .galeria div{
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 3vh 0vh;
+  }
+
+  .galeria div img{
+    display: flex;
+    margin: auto;
+  }
+  /*Fin del contenido paisajes y retratos*/
+
+  /*Pie de página de las 3 paginas*/
+  .piepagina{
+    background-color: #C6d5c5;
+    color: black;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 3vh 0vh;
+  }
+
+  .piepagina div{
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  /*Fin del pie de páagina*/
+}
+
+/*Código del encabezado para ambos módelos*/
+.navegacionindex a{
+  color: inherit;
+  padding: 6px;
+}
+
+.navegacionpaisajes a{
+  color: inherit;
+  padding: 6px;
+}
+
+.navegacionretratos a{
+  color: inherit;
+  padding: 6px;
+}
+
+.navegacionindex #inicio{
+  text-decoration: none;
+}
+
+.navegacionpaisajes #paisajes{
+  text-decoration: none;
+}
+
+.navegacionretratos #retratos{
+  text-decoration: none;
+}
+/*Fin del encabezado para mabos módelos*/
+
+/*Código del contenido index para ambos módelos*/
+@keyframes paisaje {
+  from{
+    transform: rotate(1deg);
+  }
+  to{
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes retrato {
+  from{
+    transform: translate(0px, 0px);
+  }
+  to{
+    transform: translate(20px, -5px);
+  }
+}
+
+#imgp{
+  box-shadow: 5px 5px 5px #000000;
+}
+
+#imgr{
+  box-shadow: 5px 5px 5px #000000;
+}
+
+#imgp:hover{
+  transform: rotate(10deg);
+  box-shadow: 5px 5px 5px #82c3a6;
+  border: 2px;
+  animation-name: paisaje;
+  animation-duration: 0.5s;
+}
+
+#imgr:hover{
+  transform: transform: translate(20px, -5px);
+  box-shadow: 5px 5px 5px #82c3a6;
+  border: 2px;
+  animation-name: retrato;
+  animation-duration: 0.5s;
+}
+
+.contenidoindex2 figcaption{
+  text-align: center;
+  padding: 1vh 0vh;
+  color: rgb(1,4,9);
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 22px;
+  display: block;
+}
+/*Fin del contenido index para ambos módelos*/
+
+/*Código del contenido paisajes y retratos para ambos módelos*/
+.galeria div img{
+  box-shadow: 2px 2px 2px #000000;
+}
+
+#img1{
+  -webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#img2, #img4, #img6{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#img3{
+  -webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+/*Fin del contenido paisajes y retratos para ambos módelos*/
+
+/*Código del pie de página para ambos módelos*/
+.piepagina li{
+  list-style-type: none;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.piepagina p{
+  font-size: 18px;
+  margin-top: 1vh;
+}
+
+.piepagina div h1{
+  margin-bottom: 1vh;
+}
+
+.red img{
+  width: 15px;
+  height: 15px;
+}
+
+#email{
+  text-decoration: underline;
+}
+/*Fin del pie de página para ambos módelos*/
